@@ -14,8 +14,8 @@ class App extends Component {
   };
 
   handleFeedbackClick = e => {
-    const { feedback } = e.target;
-    this.setState(prevState => ({ [feedback]: prevState[feedback] + 1 }));
+    const { name } = e.target;
+    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
   };
 
   countTotalFeedback = () => {
